@@ -15,5 +15,6 @@ public interface PartnerService {
 	public Partners save(Partners partner);
 	
 	public Page<Partners> findAllByPage(Pageable pageable);
-	
+
+
 }
