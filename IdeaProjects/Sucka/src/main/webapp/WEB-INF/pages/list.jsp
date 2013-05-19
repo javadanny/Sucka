@@ -1,9 +1,17 @@
 <html>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<head>
+    <spring:theme code="stylesheet" var="app_css" />
+    <spring:url value="/${app_css}" var="app_css_url" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/standard.css" />
+</head>
+
+
 <body>
+
 <div>
-    <h1><a href="/">Partners</a> | <a href="?teams">Teams</a></h1>
+    <h1><a href="/">Partners</a> | <a href="?teams">Teams</a> | <a href="?newPartner">Partners</a></h1>
     <c:if test="${not empty partners}">
         <table>
             <thead>
